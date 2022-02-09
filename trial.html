@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="trial.css">
+	<title>calculator</title>
+</head>
+<body>
+
+	<div class="container">
+		
+		<table class="class_calculator">
+			
+			<tr>
+				<td colspan = "3"><input type="text" id="exp" class = "display-box" disabled></td>
+				<td><input type="button" id="clear" onclick="clearInput()" value="C" class="button"></td>
+				
+			</tr>
+			<tr>
+				<td><input type="button" value="1" onclick="expressionAdd('1')" class="button"></td>
+				<td><input type="button" value="2"	onclick="expressionAdd('2')" class="button"></td>
+				<td><input type="button" value="3"	onclick="expressionAdd('3')" class="button"></td>
+				<td><input type="button" value="+"	onclick="expressionAdd('+')" class="button"></td>
+				
+			</tr>
+			<tr>
+				<td><input type="button" value="4" onclick="expressionAdd('4')" class="button"></td>
+				<td><input type="button" value="5"	onclick="expressionAdd('5')" class="button"></td>
+				<td><input type="button" value="6"	onclick="expressionAdd('6')" class="button"></td>
+				<td><input type="button" value="-"	onclick="expressionAdd('-')" class="button"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="7" onclick="expressionAdd('7')" class="button"></td>
+				<td><input type="button" value="8"	onclick="expressionAdd('8')" class="button"></td>
+				<td><input type="button" value="9"	onclick="expressionAdd('9')" class="button"></td>
+				<td><input type="button" value="*"	onclick="expressionAdd('*')" class="button"></td>
+			</tr>
+				<td><input type="button" value="0" onclick="expressionAdd('0')" class="button"></td>
+				<td><input type="button" value="="	onclick="calculateExpression()" class="button"></td>
+				<td><input type="button" value="."	onclick="expressionAdd('.')" class="button"></td>
+				<td><input type="button" value="/"	onclick="expressionAdd('/')" class="button"></td>
+		</table>
+
+	</div>
+
+</body>
+<script type="text/javascript" src="trial.js"></script>
+</html>
