@@ -8,14 +8,14 @@
 </head>
 <body>
 
+	
 	<div class="container">
 		
-		<table class="class_calculator">
+		<table class="calculator_column">
 			
 			<tr>
 				<td colspan = "3"><input type="text" id="exp" class = "display-box" disabled></td>
 				<td><input type="button" id="clear" onclick="clearInput()" value="C" class="button"></td>
-				
 			</tr>
 			<tr>
 				<td><input type="button" value="1" onclick="expressionAdd('1')" class="button"></td>
@@ -36,14 +36,26 @@
 				<td><input type="button" value="9"	onclick="expressionAdd('9')" class="button"></td>
 				<td><input type="button" value="*"	onclick="expressionAdd('*')" class="button"></td>
 			</tr>
+			<tr>
 				<td><input type="button" value="0" onclick="expressionAdd('0')" class="button"></td>
 				<td><input type="button" value="="	onclick="calculateExpression()" class="button"></td>
 				<td><input type="button" value="."	onclick="expressionAdd('.')" class="button"></td>
 				<td><input type="button" value="/"	onclick="expressionAdd('/')" class="button"></td>
+			</tr>
+			
 		</table>
 
+		<div class="history_column">
+			<p>
+				<button style="width:100%; margin:5px;">History</button>
+			    <button style="width:100%; margin:5px; background-color:blue;" onclick="deleteHistory()">Delete History</button>
+			</p>
+			<div id="history"></div>
+		</div>
 	</div>
+	
+
 
 </body>
-<script type="text/javascript" src="trial.js"></script>
+<script type="text/javascript" src="trial.js" ></script>
 </html>
